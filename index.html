@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Simplotel</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <ul class="nav-links">
+        <i class="uil uil-times navCloseBtn"></i>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="food.html">Food</a></li>
+        <li><a href="restaurant.html">Restaurant</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+      <i class="uil uil-bars navOpenBtn"></i>
+    </nav>
+
+    <div class="main">
+      <div class="showcase">
+        <h1 id="showcase-heading">LOREM IPSUM</h1>
+        <p id="showcase-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id
+          est vitae dolor rhoncus tristique. Maecenas metus quam, rhoncus
+          euismod lorem in, sollicitudin viverra eros. Donec dictum luctus quam
+          ut tristique. Curabitur nec faucibus purus. Quisque congue sem nec
+          justo mollis, in tincidunt erat pretium. Sed pulvinar, massa ac porta
+          viverra.
+        </p>
+        <button id="showcase-button">Click Me</button>
+      </div>
+      <div class="showcase-image">
+        <img
+          src="images/pexels-robin-stickel-70497.jpg"
+          alt="burger-image"
+          id="burger-image"
+        />
+      </div>
+    </div>
+    <div class="order-container">
+      <div class="order-images-containers">
+        <div class="order-images-container-1">
+          <img
+            src="images/pexels-rachel-claire-6752433.jpg"
+            alt="order-image-1"
+            id="order-images-1"
+          />
+          <img
+            src="images/pexels-eva-bronzini-6141651.jpg"
+            alt="order-image-1"
+            id="order-images-1"
+          />
+        </div>
+        <div class="order-images-container-2">
+          <img
+            src="images/pexels-mister-mister-3434523.jpg"
+            alt="order-image-2"
+            id="order-images-2"
+          />
+        </div>
+      </div>
+      <div class="order-info">
+        <p>LOREM IPSUM</p>
+        <h1 id="order-info-heading">LOREM IPSUM SET ADEMIR</h1>
+        <a href="#" id="order-link">
+          Click
+          <img src="images/icons8-arrow-30.png" alt="button-arrow-image"
+        /></a>
+      </div>
+    </div>
+    <script>
+      const nav = document.querySelector(".nav"),
+        navOpenBtn = document.querySelector(".navOpenBtn"),
+        navCloseBtn = document.querySelector(".navCloseBtn");
+
+      navOpenBtn.addEventListener("click", () => {
+        nav.classList.add("openNav");
+      });
+      navCloseBtn.addEventListener("click", () => {
+        nav.classList.remove("openNav");
+      });
+    </script>
+  </body>
+</html>
